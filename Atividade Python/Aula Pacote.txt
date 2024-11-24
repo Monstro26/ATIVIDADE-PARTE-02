@@ -1,0 +1,34 @@
+Aula Pacote >
+
+Meu pacote>
+
+init.py:
+
+from .modulo1 import funcao1 # type: ignore
+from .modulo1 import funcao2 # type: ignore
+
+modulo 1:
+
+def funcao1():
+    return "Função 1 Executada"
+
+modulo 2:
+
+def funcao2():
+    return "função 2 executada"
+
+Subpacote>
+
+init.py:
+from .modulo3 import funcao3 # type: ignore
+
+modulo3:
+def funcao3():
+    return "função 3 executada"
+
+main:
+
+from MEU_PACOTE import modulo1, modulo2
+
+print(modulo1 .funcao1())
+print(modulo2 .funcao2())
